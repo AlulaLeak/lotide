@@ -17,12 +17,12 @@ function eqArrays(actual, expected) {
   } else {
     answer = `🛑🛑🛑 Assertion Failed: ${actual} !== ${expected}`;
   }
-  return console.log(answer)
+  return answer
 }
 
 
-eqArrays([1, 2, 3], [1, 2, 3]) // => true
-eqArrays([1, 2, 3], [3, 2, 1]) // => false
+console.logeq(Arrays([1, 2, 3], [1, 2, 3])) // => true
+console.logeq(Arrays([1, 2, 3], [3, 2, 1])) // => false
 
-eqArrays(["1", "2", "3"], ["1", "2", "3"]) // => true
-eqArrays(["1", "2", "3"], ["1", "2", 3]) // => false
+console.logeq(Arrays(["1", "2", "3"], ["1", "2", "3"])) // => true
+console.log(eqArrays(["1", "2", "3"], ["1", "2", 3])) // => false
