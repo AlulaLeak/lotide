@@ -1,7 +1,7 @@
 function countOnly(allItems, itemsToCount) {
   
   for (let i in itemsToCount) {
-    if (itemsToCount[i] === true)
+    if (itemsToCount[i] === true) // Not needed but double check lol
       for (let k = 0; k < allItems.length; k++) {
         if (allItems[k] === i) {
           itemsToCount[i] += 1;
