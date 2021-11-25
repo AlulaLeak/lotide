@@ -7,22 +7,22 @@ function countOnly(allItems, itemsToCount) {
           itemsToCount[i] += 1;
         }
       }
-      }
-      for (let i in itemsToCount) {
-        if (itemsToCount[i] === true || itemsToCount[i] === false){
-          delete itemsToCount[i]
-        }
-      }      
-      for (let i in itemsToCount) {
-        itemsToCount[i] -= 1
-      }
+  }
+  for (let i in itemsToCount) {
+    if (itemsToCount[i] === true || itemsToCount[i] === false) {
+      delete itemsToCount[i];
+    }
+  }
+  for (let i in itemsToCount) {
+    itemsToCount[i] -= 1;
+  }
     
-  return itemsToCount
+  return itemsToCount;
 }
 
 console.log(countOnly(
   ['a', 'a', 'b', 'c', 'd', 'e', 'd', 'a', 'a', 'a', 'a'],
-{ 'a': true, 'd': true, 'b': false, 'f': true, 'k': true }
+  { 'a': true, 'd': true, 'b': false, 'f': true, 'k': true }
 ));
 
 const assertEqual = function(actual, expected) {

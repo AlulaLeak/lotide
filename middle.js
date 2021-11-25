@@ -1,12 +1,12 @@
-const middle = function (arrayEl) {
+const middle = function(arrayEl) {
   
   let middleNum = [];
   
-  if (arrayEl.length % 2 !== 0){
-    middleNum.push(arrayEl[Math.round(arrayEl.length / 2 - 1)])
+  if (arrayEl.length % 2 !== 0) {
+    middleNum.push(arrayEl[Math.round(arrayEl.length / 2 - 1)]);
   }
   return middleNum;
-}
+};
 
 
 
@@ -15,7 +15,7 @@ const middle = function (arrayEl) {
 
 
 
-console.log(middle(["Yo Yo", "Lighthouse", "Labs", "More", "Santa", "Clause"]))
+console.log(middle(["Yo Yo", "Lighthouse", "Labs", "More", "Santa", "Clause"]));
 
 
 
@@ -32,7 +32,7 @@ console.log(middle(["Yo Yo", "Lighthouse", "Labs", "More", "Santa", "Clause"]))
 
 
 
-const assertEqual = function (actual, expected) {
+const assertEqual = function(actual, expected) {
 
   let answer = "";
 
@@ -54,14 +54,14 @@ function eqArrays(firstArr, secondArr) {
   if (firstArr.length === secondArr.length) {
     for (let i = 0; i < firstArr.length; i++) {
       if (firstArr[i] === secondArr[i]) {
-        holderArrayOfTruths.push(firstArr[i])
-      } 
-    } if (holderArrayOfTruths.length === firstArr.length){
-        console.log(true)
-      } else {
-        console.log(false)
+        holderArrayOfTruths.push(firstArr[i]);
       }
+    } if (holderArrayOfTruths.length === firstArr.length) {
+      console.log(true);
+    } else {
+      console.log(false);
+    }
   } else {
-    console.log(false)
+    console.log(false);
   }
 }

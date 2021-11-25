@@ -1,10 +1,10 @@
 
 const head = (arr) => {
 
-  return arr[0]
-}
+  return arr[0];
+};
 
-const assertEqual = function (actual, expected) {
+const assertEqual = function(actual, expected) {
 
   let answer = "";
 
