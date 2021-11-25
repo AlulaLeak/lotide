@@ -15,6 +15,7 @@ function countLetters(sentance) {
     "j": 0,
     "k": 0,
     "l": 0,
+    "m": 0,
     "n": 0,
     "o": 0,
     "p": 0,
