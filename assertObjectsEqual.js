@@ -40,16 +40,28 @@ const eqObjects = function(object1, object2) {
   return answer;
 };
 
+const assertObjectsEqual = function(actual, expected) {
+
+  if (eqObjects(actual, expected)) {
+    console.log(`✅✅✅ Assertion Passed: ${actual} === ${expected}`);
+  } else {
+    console.log(`🛑🛑🛑 Assertion Failed: ${actual} !== ${expected}`);
+  }
+
+};
+
+assertObjectsEqual({'key1': 1, 'key2': 2, 'key3': 3}, {'key1': 1, 'key2': 2, 'key3': 3});
+
 const ab = { a: "1", b: "2" };
 const ba = { b: "2", a: "1" };
-eqObjects(ab, ba); // => true
+assertObjectsEqual(ab, ba); // => true
 
 const abc = { a: "1", b: "2", c: "3" };
-eqObjects(ab, abc); // => false
+assertObjectsEqual(ab, abc); // => false
 
 const cd = { c: "1", d: ["2", 3] };
 const dc = { d: ["2", 3], c: "1" };
-eqObjects(cd, dc); // => true
+assertObjectsEqual(cd, dc); // => true
 
 const cd2 = { c: "1", d: ["2", 3, 4] };
-eqObjects(cd, cd2); // => false
+assertObjectsEqual(cd, cd2); // => false
