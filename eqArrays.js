@@ -17,4 +17,4 @@ let eqArrays = function(firstArr, secondArr) {
   }
 };
 
-eqArrays([1, 2, 3], [1, 2, 3]);
+module.exports = eqArrays;
