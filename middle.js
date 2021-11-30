@@ -4,18 +4,13 @@ const middle = function(arrayEl) {
   
   if (arrayEl.length % 2 !== 0) {
     middleNum.push(arrayEl[Math.round(arrayEl.length / 2 - 1)]);
+    return middleNum;
   }
+  
   return middleNum;
 };
 
-
-
-
-
-
-
-
-console.log(middle(["Yo Yo", "Lighthouse", "Labs", "More", "Santa", "Clause"]));
+module.exports = middle;
 
 
 
