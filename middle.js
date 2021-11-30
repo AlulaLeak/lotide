@@ -4,10 +4,12 @@ const middle = function(arrayEl) {
   
   if (arrayEl.length % 2 !== 0) {
     middleNum.push(arrayEl[Math.round(arrayEl.length / 2 - 1)]);
+    middleNum = middleNum[0];
     return middleNum;
   }
+
+  return [];
   
-  return middleNum;
 };
 
 module.exports = middle;
