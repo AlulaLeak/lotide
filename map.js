@@ -1,4 +1,4 @@
-const assertEqual = function(actual, expected) {
+const assertEqual = function (actual, expected) {
 
   let answer = "";
 
@@ -12,9 +12,9 @@ const assertEqual = function(actual, expected) {
   return console.log(answer);
 };
 
-function eqArrays(firstArr, secondArr) {
+const eqArrays = function(firstArr, secondArr) {
 
-  holderArrayOfTruths = [];
+  let holderArrayOfTruths = [];
 
   if (firstArr.length === secondArr.length) {
     for (let i = 0; i < firstArr.length; i++) {
@@ -31,7 +31,7 @@ function eqArrays(firstArr, secondArr) {
   }
 }
 
-const map = function(array, callback) {
+const map = function (array, callback) {
   const results = [];
   for (let item of array) {
     results.push(callback(item));

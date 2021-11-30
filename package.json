@@ -1,8 +1,8 @@
 {
-  "name": "lotide",
+  "name": "@alulaleak/lotide",
   "version": "1.0.0",
-  "description": "",
-  "main": "assertArraysEqual.js",
+  "description": "This is a library similar to lodash but a much smaller and simpler version",
+  "main": "index.js",
   "directories": {
     "test": "test"
   },
@@ -13,7 +13,7 @@
     "type": "git",
     "url": "git+https://github.com/AlulaLeak/lotide.git"
   },
-  "author": "",
+  "author": "Alula Leakemariam",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/AlulaLeak/lotide/issues"
